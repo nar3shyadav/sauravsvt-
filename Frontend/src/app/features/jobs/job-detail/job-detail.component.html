@@ -1,0 +1,46 @@
+<div class="job-detail-container">
+    <div *ngIf="loading" class="loading">Loading details...</div>
+    <div *ngIf="error" class="error">{{ error }}</div>
+
+    <div class="job-detail-card" *ngIf="job && !loading">
+        <div class="header">
+            <div class="title-section">
+                <h1>{{ job.title }}</h1>
+                <h2 class="company">{{ job.company_name }}</h2>
+                <div class="meta">
+                    <span>📍 {{ job.location }}</span>
+                    <span>💼 {{ job.work_type }}</span>
+                    <span *ngIf="job.salary_range">💰 {{ job.salary_range }}</span>
+                    <span>📅 Posted {{ job.date_posted | date }}</span>
+                    <span>👁️ {{ job.views }} views</span>
+                </div>
+            </div>
+            <div class="action-section">
+                <ng-container *ngIf="currentUser$ | async as user; else loginToApply">
+                    <button *ngIf="user.role === 'user'" class="btn-primary btn-large" (click)="applyJob()">Apply
+                        Now</button>
+                    <div *ngIf="user.role !== 'user'" class="info-msg">Recruiters cannot apply</div>
+                </ng-container>
+                <ng-template #loginToApply>
+                    <a routerLink="/auth/login" class="btn-primary btn-large">Login to Apply</a>
+                </ng-template>
+            </div>
+        </div>
+
+        <div class="content">
+            <section>
+                <h3>Description</h3>
+                <p>{{ job.description }}</p>
+            </section>
+
+            <section *ngIf="job.requirements">
+                <h3>Requirements</h3>
+                <p>{{ job.requirements }}</p>
+            </section>
+        </div>
+
+        <div class="footer">
+            <a routerLink="/jobs" class="btn-secondary">← Back to Jobs</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.sample
+.envrc
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+logs/
+
+# Test/coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Type checkers / tooling caches
+.mypy_cache/
+.pyre/
+.pytype/
+.cache/
+
+# Databases / dumps
+*.sqlite3
+dump/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Local Development
+tempCodeRunnerFile.py
+
+# Additional Virtual Environments
+.venv/
+env/
+
+# Windows System Files
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Editor Swap Files
+*.swp
+*.swo
+*~
+*.session.sql
+
+

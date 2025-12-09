@@ -1,0 +1,42 @@
+<nav class="navbar">
+    <div class="navbar-container">
+        <a routerLink="/" class="navbar-logo">ROC Gym Job Board</a>
+
+        <button class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu" [class.active]="isMenuOpen">
+            <li class="nav-item">
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                    (click)="isMenuOpen = false">Home</a>
+            </li>
+
+            <ng-container *ngIf="currentUser$ | async as user; else guestLinks">
+                <li class="nav-item" *ngIf="user.role === 'recruiter' || user.role === 'admin'">
+                    <a routerLink="/dashboard/recruiter" routerLinkActive="active"
+                        (click)="isMenuOpen = false">Dashboard</a>
+                </li>
+                <li class="nav-item" *ngIf="user.role === 'user'">
+                    <a routerLink="/applications" routerLinkActive="active" (click)="isMenuOpen = false">My
+                        Applications</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn-logout" (click)="logout()">Logout</button>
+                </li>
+            </ng-container>
+
+            <ng-template #guestLinks>
+                <li class="nav-item">
+                    <a routerLink="/auth/login" routerLinkActive="active" (click)="isMenuOpen = false">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/auth/register" routerLinkActive="active" class="btn-register"
+                        (click)="isMenuOpen = false">Register</a>
+                </li>
+            </ng-template>
+        </ul>
+    </div>
+</nav>

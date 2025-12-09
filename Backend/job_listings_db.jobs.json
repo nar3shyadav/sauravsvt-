@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "69034ea56e6f240f9521e557"
+  },
+  "company_name": "Acme Corp",
+  "title": "Full Stack Developer",
+  "description": "We are looking for a skilled developer to join our team.",
+  "location": "Remote",
+  "work_type": "Full-time",
+  "views": 0,
+  "date_posted": {
+    "$date": "2025-10-30T11:40:21.035Z"
+  },
+  "posted_by": "69034ada89c44e384c53720b"
+},
+{
+  "_id": {
+    "$oid": "69034ec06e6f240f9521e559"
+  },
+  "company_name": "Acme Corp",
+  "title": "Full Stack Developer",
+  "description": "We are looking for a skilled developer to join our team.",
+  "location": "Remote",
+  "work_type": "Full-time",
+  "views": 0,
+  "date_posted": {
+    "$date": "2025-10-30T11:40:48.637Z"
+  },
+  "posted_by": "69034ada89c44e384c53720b"
+}]

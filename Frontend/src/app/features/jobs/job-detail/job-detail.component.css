@@ -1,0 +1,96 @@
+.job-detail-container {
+    padding: 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.job-detail-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.header {
+    padding: 2.5rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.title-section h1 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.company {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+}
+
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.content {
+    padding: 2.5rem;
+}
+
+.content h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+.content section {
+    margin-bottom: 2.5rem;
+}
+
+.content p {
+    white-space: pre-line;
+    /* Handle extensive descriptions */
+}
+
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.info-msg {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.footer {
+    padding: 1.5rem 2.5rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.btn-secondary {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.btn-secondary:hover {
+    color: var(--primary-color);
+}
+
+.loading,
+.error {
+    text-align: center;
+    padding: 2rem;
+}

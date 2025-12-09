@@ -1,0 +1,38 @@
+<div class="job-list-container">
+    <div class="filters">
+        <form [formGroup]="filterForm" (ngSubmit)="onSearch()" class="search-form">
+            <input type="text" formControlName="title" placeholder="Job Title or Keywords">
+            <input type="text" formControlName="location" placeholder="Location">
+            <button type="submit" class="btn-primary">Search</button>
+        </form>
+    </div>
+
+    <div class="jobs-grid" *ngIf="!loading && !error">
+        <div class="job-card" *ngFor="let job of jobs">
+            <h3>{{ job.title }}</h3>
+            <div class="company">{{ job.company_name }}</div>
+            <div class="location-type">
+                <span>📍 {{ job.location }}</span>
+                <span>💼 {{ job.work_type }}</span>
+            </div>
+            <div class="salary" *ngIf="job.salary_range">💰 {{ job.salary_range }}</div>
+            <p class="description">{{ job.description | slice:0:150 }}...</p>
+            <div class="card-footer">
+                <span class="date">Posted: {{ job.date_posted | date }}</span>
+                <a [routerLink]="['/jobs', job._id]" class="btn-details">View Details</a>
+            </div>
+        </div>
+
+        <div *ngIf="jobs.length === 0" class="no-jobs">
+            <p>No jobs found matching your criteria.</p>
+        </div>
+    </div>
+
+    <div *ngIf="loading" class="loading">
+        Loading jobs...
+    </div>
+
+    <div *ngIf="error" class="error">
+        {{ error }}
+    </div>
+</div>

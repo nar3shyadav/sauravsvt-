@@ -1,0 +1,47 @@
+<div class="register-container">
+    <div class="register-card">
+        <h2>Create Account</h2>
+        <p class="subtitle">Join ROC Gym today</p>
+
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" formControlName="email" placeholder="Enter your email"
+                    [class.invalid]="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+                <div class="error-msg" *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+                    Valid email is required
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" formControlName="password" placeholder="Create a password"
+                    [class.invalid]="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+                <div class="error-msg"
+                    *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+                    Password must be at least 6 characters
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="role">I am a...</label>
+                <select id="role" formControlName="role">
+                    <option value="user">Job Seeker</option>
+                    <option value="recruiter">Recruiter</option>
+                </select>
+            </div>
+
+            <div class="form-error" *ngIf="error">
+                {{ error }}
+            </div>
+
+            <button type="submit" [disabled]="registerForm.invalid || loading" class="btn-primary">
+                {{ loading ? 'Creating Account...' : 'Sign Up' }}
+            </button>
+        </form>
+
+        <div class="register-footer">
+            <p>Already have an account? <a routerLink="/auth/login">Login</a></p>
+        </div>
+    </div>
+</div>

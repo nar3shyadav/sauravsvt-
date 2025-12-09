@@ -1,0 +1,208 @@
+[{
+  "_id": {
+    "$oid": "6904a6b0ca115c609a9d28d6"
+  },
+  "email": "naresh.adhikari@gmail.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJDlIUVF4VzhEZWRaMzg5QW1aaUpFZXVBcm9BZDY4NjBSU3dvLnRkbm9COWpzUFRiOU5vT3RD",
+      "subType": "00"
+    }
+  },
+  "role": "admin",
+  "created_at": {
+    "$date": "2025-10-31T12:08:16.255Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6907d3d786da885a8e785b85"
+  },
+  "email": "user@example.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJGk3VXBlaHpYNnJnSFk1WTk0NUtHb2VMbzdKbHZza2E0MHJ6VTN2Q3A4TEo4UjMwV2Z0MEcu",
+      "subType": "00"
+    }
+  },
+  "role": "user",
+  "created_at": {
+    "$date": "2025-11-02T21:57:43.856Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690896aa1ab786eb43f8c2c6"
+  },
+  "email": "admin@example.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJHV5SnN5eElzcG5mcnVxSkxyL09QWWVtek1HeVlZRHBOckpzVEtwbzVUVi94OHc0Y0p0SnhP",
+      "subType": "00"
+    }
+  },
+  "role": "admin",
+  "created_at": {
+    "$date": "2025-11-03T11:48:58.221Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6908b0bb7ccdc91c94482312"
+  },
+  "email": "nareshadhikari@gmail.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJFNhc2JuNko1bGdpWE40cHhjY1dtTWVpdmwwNVJmZFVlZnhwWXJkTEUwZ3J0eGQ5SVd0UTJh",
+      "subType": "00"
+    }
+  },
+  "role": "admin",
+  "created_at": {
+    "$date": "2025-11-03T13:40:11.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690aa71a98f15f2fd3a8b448"
+  },
+  "email": "newuser@example.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJEEuL05TdWp1UVRXOGlBRjRrWllJdWVJSGxCVVVuTGI4WUo5NXY5dGJWTDg4amg4Q2VyOTRT",
+      "subType": "00"
+    }
+  },
+  "role": "user",
+  "created_at": {
+    "$date": "2025-11-05T01:23:38.622Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690b6add9f5fa441f3edc25a"
+  },
+  "email": "naresh.adhikar@gmail.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJGx2UWFlNjQ2Q3hDeTFEWGM1QTViYU85aE9YVmU0cnAxOTNBT0FVWVouY3pvQW5VNHBCWEVx",
+      "subType": "00"
+    }
+  },
+  "role": "admin",
+  "created_at": {
+    "$date": "2025-11-05T15:18:53.529Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690b93a79731c295a2c6b51d"
+  },
+  "email": "user1@example.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJDVaODdmQWpRU1NJakVzUHMxdWVOcy5ad2cxblFQODdzWlBhUUlPUlBXZWpmRnpGeG9sWmpl",
+      "subType": "00"
+    }
+  },
+  "role": "user",
+  "created_at": {
+    "$date": "2025-11-05T18:12:55.804Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690ba2cc9731c295a2c6b533"
+  },
+  "email": "{{admin_email}}",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJFNxSWx1RTE4Vk9Ja3JBY1B5akI1Q09JVkdtaThJYkVwRmoyYnkvWEh3enJjWnh2TW1ScEdL",
+      "subType": "00"
+    }
+  },
+  "role": "admin",
+  "created_at": {
+    "$date": "2025-11-05T19:17:32.035Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690ba3239731c295a2c6b536"
+  },
+  "email": "{{recruiter_email}}",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJHRPNXhmYVVtajRHV1NvSHBpOUg3TC5vZGlNeU1kb09oZVE1YmJyb1JKZjNyeU5wcjNPWllH",
+      "subType": "00"
+    }
+  },
+  "role": "recruiter",
+  "created_at": {
+    "$date": "2025-11-05T19:18:59.405Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690ba3419731c295a2c6b538"
+  },
+  "email": "{{user_email}}",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJEhRMHlxOUc3cjBocjBnL1RLSk5BMS54aEdLZENNd25DdndLQVVPVGx5NXlRM0dDRzUuVEFD",
+      "subType": "00"
+    }
+  },
+  "role": "user",
+  "created_at": {
+    "$date": "2025-11-05T19:19:29.459Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690c80ab5608734a146a8735"
+  },
+  "email": "john.doe@example.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJGQyOWg3c0Mud3pzTnZrdEM5cG5aSy4uUnZheDkxVE9HOHBaYVBlbG1UNzF6ajJJdGpYQjlD",
+      "subType": "00"
+    }
+  },
+  "role": "user",
+  "created_at": {
+    "$date": "2025-11-06T11:04:11.454Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690c887e5608734a146a873d"
+  },
+  "email": "recruiter@example.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJEJSMmRJZFFlNXBSS2tzME8xenhrd3VFQnVDQ3Z4Wi9sVkw1UDllamJqS2ZTeEo2R0trVXVt",
+      "subType": "00"
+    }
+  },
+  "role": "recruiter",
+  "created_at": {
+    "$date": "2025-11-06T11:37:34.174Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690c89cc5608734a146a8740"
+  },
+  "email": "user12@example.com",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJEJpRzBWbjZJMUJJNFNrQXhpeVVhNGVYOHRBd1pOTVd1TTlYNXFUQ2pNN2w5QlJnRm5hT2Ft",
+      "subType": "00"
+    }
+  },
+  "role": "user",
+  "created_at": {
+    "$date": "2025-11-06T11:43:08.072Z"
+  }
+}]
